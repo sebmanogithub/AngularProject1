@@ -1,4 +1,4 @@
-import { Component, input } from '@angular/core';
+import { Component, EventEmitter, input, output } from '@angular/core';
 import { VideoGame } from '../list-games/models/video-game';
 
 @Component({
@@ -11,4 +11,12 @@ import { VideoGame } from '../list-games/models/video-game';
 export class TableGamesComponent {
   items = input.required<VideoGame[]>();
   title = input<string>('');
+  toCreate = output<void>();
+  // @Output() toCreate = new EventEmitter<void>(); Angular v < v15
+  
+
+  clickToAddNewVideoGame(): void {
+    // Bubble Event
+    this.toCreate.emit();
+  }
 }

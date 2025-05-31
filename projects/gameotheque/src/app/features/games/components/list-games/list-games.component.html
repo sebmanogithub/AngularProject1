@@ -1,5 +1,11 @@
-<dtbc-table-games title="Liste de mes jeux" [items]="videoGameList"></dtbc-table-games>
-<dtbc-table-games [items]="videoGameList"></dtbc-table-games>
-<dtbc-table-games [items]="videoGameList"></dtbc-table-games>
-<dtbc-table-games [items]="videoGameList"></dtbc-table-games>
+<dtbc-table-games
+     title="Liste de mes jeux" 
+     [items]="videoGameList"
+     (toCreate)="prepareCreation()">
+</dtbc-table-games>
+
+@if(readyToCreate()) {
+    <dtbc-create-video-game></dtbc-create-video-game>
+}
+
 
