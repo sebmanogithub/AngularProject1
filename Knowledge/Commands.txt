@@ -1,0 +1,8 @@
+En entreprise : 
+ng new gameotheque-workspace --create-application=false
+ng g app gameotheque
+ng g c features/games/components/list-games
+ng g c features/games/components/table-games
+
+
+D:\Angular\LES FONDAMENTAUX\gameotheque-workspace\Knowledge
