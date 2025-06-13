@@ -4,6 +4,7 @@ ng g app gameotheque
 ng g c features/games/components/list-games
 ng g c features/games/components/table-games
 ng g c features/games/components/create-video-game
+ng g s features/games/services/
 
 npm init -y
 npm i -D typescript

@@ -1,5 +1,5 @@
 import { Component, EventEmitter, input, output } from '@angular/core';
-import { VideoGame } from '../list-games/models/video-game';
+import { VideoGame } from '../../models/video-game';
 
 @Component({
   selector: 'dtbc-table-games',
